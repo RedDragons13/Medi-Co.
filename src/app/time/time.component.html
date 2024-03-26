@@ -1,0 +1,66 @@
+
+<div class="container">
+    <div class="header">
+      <img src="https://res.cloudinary.com/dkbqkkk00/image/upload/v1711008343/img2_xqh29k.jpg" class="v">
+      <span><h4>View Reports</h4></span>
+      <span>Contact Us : +91 987654321</span>
+    </div>
+    <hr class="separator">
+    <div class="appointment-section">
+      <div class="doctor-info">
+        <img src="https://www.aapc.com/codes/webroot/upload/articles_pdf/2022/cca/2022-02-24_15-25-37.webp" >
+        <h3>DR.P.JOHNNY</h3>
+        <p>MBBS,MS(GENERAL SURGERY),FAMS,RAGES</p>
+        <p>EXPERIENCE:19 YEARS</p>
+        <p>Honorary/Part Time Consultant General,</p>
+        <p>Laproscopic & Bariatric Surgeon</p>
+        <button>BOOK NOW!</button>
+      </div>
+  
+      <div class="date-time-picker">
+        <label class="select-date-label"><h2><b>Select Date</b></h2></label> <!-- Moved select date above calendar with some spacing -->
+        <div class="calendar">
+          <div class="calendar-header">
+            <button (click)="prevMonth()">&lt;</button>
+            <span>{{ currentDate | date:'MMMM yyyy' }}</span>
+            <button (click)="nextMonth()">&gt;</button>
+          </div>
+          <div class="calendar-body">
+            <div class="week-days">
+              <div class="day">Sun</div>
+              <div class="day">Mon</div>
+              <div class="day">Tue</div>
+              <div class="day">Wed</div>
+              <div class="day">Thu</div>
+              <div class="day">Fri</div>
+              <div class="day">Sat</div>
+            </div>
+            <div class="days">
+              <div class="day" *ngFor="let day of daysInMonth" (click)="selectDate(day)">
+                {{ day }}
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="selected-date-box">
+          <input type="text" [value]="selectedDate ? selectedDate.toLocaleDateString() : ''" readonly>
+        </div>
+      </div>
+      
+      
+      <div class="time-slots">
+        <h2>Time Slots</h2> <!-- Added heading for time slots -->
+        <div class="time-slot" *ngFor="let slot of timeSlots" (click)="selectTimeSlot(slot)">
+          {{ slot }}
+        </div>
+      </div>
+      
+      
+    </div>
+  
+    <div class="footer">
+      If you need any assistance in booking an appointment, please call our 24/7 Helpline Number :040-23456 10
+    </div>
+  </div>
+  

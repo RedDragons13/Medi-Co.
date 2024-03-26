@@ -1,0 +1,191 @@
+/* Styles for the appointment page */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #880ED4 ;
+    color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #880ED4;
+    margin-top: 0.01px;
+  }
+  .separator {
+    border: none;
+    border-top: 2px solid #ffffff; /* White color */
+    margin: 0; /* Remove any default margin */
+    margin-top: 0.1px;;
+  }
+  
+  .appointment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  .doctor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-right: 2rem; /* Move the doctor info section to the right slightly */
+    margin-top: 35px;
+    margin-left: 150px;
+    
+  }
+  .doctor-info img {
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 10px; /* Keep the border-radius if desired */
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .doctor-info h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .doctor-info p {
+    margin: 0.25rem 0;
+  }
+  
+  .doctor-info button {
+    background-color: #880ED4;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .date-time-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items at the center */
+  }
+  
+  .date-time-picker label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .date-time-picker button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 0.25rem;
+  }
+  
+  .calendar {
+    background-color: #B793F0;
+    color: #333;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 300px; /* Increase the width of the calendar */
+    height: 300px; /* Increase the height of the calendar */
+    margin-top: 7px;
+    margin-left: 2px;;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .calendar-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #880ED4;
+  }
+  
+  .select-date-label {
+    margin-bottom: 0.5rem;
+    margin-top:50px;
+  }
+  
+  .selected-date-box input[type="text"] {
+    text-align: center; /* Align text in the middle of the text box */
+    margin-top:1rem;
+  }
+  .time-slots {
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    justify-content: flex-start; /* Align items at the start */
+    margin-top: 8rem;
+    margin-right:150px;
+  }
+  
+  .time-slot {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .time-slot:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .time-slot.selected {
+    background-color: #880ED4;
+    color: #fff;
+  }
