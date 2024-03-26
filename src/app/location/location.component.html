@@ -6,17 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Location</title>
-
 </head>
 
 <body style="background-color: #880ED4; display: flex; justify-content: center; align-items: flex-end; min-height: 100vh;">
   
-    <div style="position: absolute; top: 60px; left: 55%; transform: translateX(-60%); color: #fff;">
+    <div style="position: absolute; top: 20px; left: 20px; width: calc(100% - 40px);">
+        <header style="display: flex; justify-content: space-between; color: #fff;">
+            <div><img src="https://res.cloudinary.com/dkbqkkk00/image/upload/v1711008343/img2_xqh29k.jpg" alt="Logo"></div>
+            <div style="display: flex; align-items: center;">
+                <h3 style="margin-right: 10px;">Contact Us:</h3>
+                <span style="color: white;">9234568XXX</span>
+            </div>
+        </header>
+        <div style="border-bottom: 2px solid white; margin-top: 1px;"></div>
+    </div>
+    
+  
+
+    <div style="position: absolute; top: 90px; left: 55%; transform: translateX(-60%); color: #fff;">
         <h2>FIND DOCTOR AND BOOK AN APPOINTMENT</h2>
       
         <hr>
     </div>
-    <div style="position: absolute; top: 150px; left: 50%; transform: translateX(-50%); color: #fff;">
+    <div style="position: absolute; top: 200px; left: 50%; transform: translateX(-50%); color: #fff;">
         <h3>CHOOSE LOCATION</h3>
       
     </div>
@@ -28,11 +40,10 @@
         <button class="location-button" (click)="showDepartments('shamshabad')">Shamshabad</button>
 
         <div class="departments-container" *ngIf="selectedLocation">
-            <h3>Departments for {{ selectedLocation | uppercase }}</h3>
-            <button class="department">Cardiologist</button>
-            <button class="department">Neurologist</button>
-            <button class="department">Orthopedic</button>
-            <button class="department">Dermatologist</button>
+            <h3 style="color: white;">Departments for {{ selectedLocation | uppercase }}</h3>
+
+            <button class="department" *ngFor="let department of departments" style="background-color: #B793F0; color: #fff;">{{ department }}</button>
+
         </div>
     </div>
     <div style="position: absolute; bottom: 20px; left: 35%; transform: translateX(-20%); color: #fff;">
@@ -41,3 +52,4 @@
 </body>
 
 </html>
+
