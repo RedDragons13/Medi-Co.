@@ -1,0 +1,31 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align items at the bottom of the flex container */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    padding-bottom: 550px; /* Add padding to lift the container up */
+}
+
+.location-container {
+    max-width: 400px;
+    padding: 200px;
+    text-align: center;
+    margin-bottom: 50px; /* Add margin to lift the container up */
+}
+.location-button {
+    padding: 10px 10px;
+    background-color: #B793F0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 2px 5px; /* Adjusted margin to reduce the gap */
+    border-radius: 5px;
+}
+
+
+
+/* Other styles remain the same */

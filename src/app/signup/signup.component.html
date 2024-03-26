@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color:#880ED4;
+           
+        }
+        .con {
+            float: right;
+            padding-top: 35px;
+            font-size: large;
+            color: #fff;
+        }
+        .med {
+            display: inline-block;
+            font-size: 25px;
+            padding: 2px;
+        }
+        hr {
+            background-color: #fff;
+            height: 1px;
+            margin: 0%;
+        }
+        .f {
+            background-color: #751aff;
+        }
+        input {
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .container2 {
+            margin: 10%;
+            height: 45vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #B793F0;
+            border-radius: 15px;
+            display: flex;
+            width: 25%;
+        }
+        .container1 {
+            margin:5%;
+            height: 40vh;
+            width: 35%;
+            justify-content: center;
+        }
+        .v {
+            mix-blend-mode: lighten;
+        }
+        .in {
+            padding: 10px;
+        }
+        .h21 {
+            text-align: center;
+        }
+        .h31 {
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .but {
+            border-radius: 15px;
+            padding: 5px;
+            background-color: #007bff; /* Button color */
+            color: #fff;
+            width: 85px;
+            align-items: center;
+            cursor: pointer;
+            border: none; /* Remove button border */
+        }
+        .but:hover {
+            background-color: #0056b3; /* Button color on hover */
+        }
+        .acc{
+           margin-top: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dkbqkkk00/image/upload/v1711008343/img2_xqh29k.jpg" class="v">
+    <div class="con"><strong>Contact Us: +919012345678</strong></div>
+    <hr style="color: #fff;">
+    <div class="container">
+        <div class="container1">
+            <img src="https://res.cloudinary.com/dkbqkkk00/image/upload/c_fill,w_500,h_500,ar_1:1/v1711007323/logo_yvklmw.png">
+            <div class="h31">
+                <h3>OUR PASSION IS TO HEAL</h3>
+            </div>
+        </div>
+        <div class="container2">
+            <form>
+                <div class="h21">
+                    <h2>Sign up</h2>
+                </div>
+                <table>
+                    <tr>
+                        <td><label for="user">User Name</label></td>
+                        <td><input type="text" id="user" name="user"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email</label></td>
+                        <td><input type="email" id="mail" name="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phno">Phone No.</label></td>
+                        <td><input type="number" id="phno" name="phno"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input type="password" id="pass" name="pass"></td>
+                    </tr>
+                </table>
+                <div class="in">
+                    <input type="button" class="but" value="Register">
+                </div>
+                <hr style="margin-bottom: 4px;">
+                <div class="acc">
+                    Already have an account? <a href="#"><input type="button" class="but" value="Login"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
