@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background-color: #aa80ff;
+            color: aliceblue;
+        }
+        .con {
+            float: right;
+            padding-top: 35px;
+            font-size: large;
+        }
+        .med {
+            display: inline-block;
+            font-size: 25px;
+            padding: 2px;
+        }
+        hr {
+            background-color: aliceblue;
+            height: 2px;
+            margin: 0%;
+        }
+        .f {
+            background-color: #751aff;
+        }
+        input {
+            border: none;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .container2 {
+            margin: 10%;
+            height: 45vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #cbbaed;
+            border-radius: 15px;
+            display: flex;
+            width: 25%;
+        }
+        .container1 {
+            
+            margin:5%;
+            height: 40vh;
+            width: 35%;
+            justify-content: center;
+        }
+        .v {
+            mix-blend-mode: lighten;
+        }
+        .in {
+            padding: 10px;
+        }
+        .h21 {
+            text-align: center;
+        }
+        .h31 {
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .but {
+            border-radius: 15px;
+            padding: 5px;
+            background-color: #751aff;
+            color: white;
+            width: 85px;
+            align-items: center;
+        }
+        .acc{
+           margin-top: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://res.cloudinary.com/dkbqkkk00/image/upload/v1711008343/img2_xqh29k.jpg" class="v">
+    <div class="con"><strong>Contact Us: +919012345678</strong></div>
+    <hr style="color: white;">
+    <div class="container">
+        <div class="container1">
+            <img src="https://res.cloudinary.com/dkbqkkk00/image/upload/c_fill,w_500,h_500,ar_1:1/v1711007323/logo_yvklmw.png">
+            <div class="h31">
+                <h3>OUR PASSION IS TO HEAL</h3>
+            </div>
+        </div>
+        <div class="container2">
+            <form>
+                <div class="h21">
+                    <h2>Sign up</h2>
+                </div>
+                <div class="in">
+                    <label for="user">User Name</label>
+                    <input type="text" id="user" name="user">
+                </div>
+                <div class="in">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div class="in">
+                    <label for="phno">Phone No.</label>
+                    <input type="number" id="phno" name="phno">
+                </div>
+                <div class="in">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+                <div class="in">
+                    <input type="button" class="but" value="Register">
+                </div>
+                <hr style="margin-bottom: 4px;">
+                <div class="acc">
+                    Already have an account? <a href="#"><input type="button" class="but" value="Log in"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
