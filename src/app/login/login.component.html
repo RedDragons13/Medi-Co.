@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.component.css" />
+  </head>
+  <body>
+    <!-- Header with Medi&co aligned left and contactus aligned right -->
+    <div style="display: flex; justify-content: space-between; padding: 2px; color:azure;">
+      <h2><div class="medi-logo"><img src="https://res.cloudinary.com/dkbqkkk00/image/upload/v1711008343/img2_xqh29k.jpg" style="height: 70px; width:300px;"></div></h2>
+      <h2><div class="contact-info"></div>Contact Us: +91 9012345678</h2>
+    </div>
+    <hr />
+    <!-- Add an image to the left of the page -->
+    <div class="logo">
+      <img
+        src="https://res.cloudinary.com/dkbqkkk00/image/upload/c_fill,w_500,h_500,ar_1:1/v1711007323/logo_yvklmw.png" style="height: 300px; width: 300px;"/>
+    </div>
+    <style>
+      logo {
+        height: 50px;
+        width: 50px;
+        padding-top: 50px;
+        padding-left: 50px;
+      }
+    </style>
+    <br /><br /><br /><br /><br /><br /><br />
+    <div class="text">
+      <h2 style="text-align: center">OUR PASSION IS TO HEAL.</h2>
+      <p>A Healthier Tomorrow Starts Today : Schedule Your Appointment!</p>
+      <p>Your Wellness,Our Expertise : Setup Your Appointment Today.</p>
+    </div>
+    <div class="container">
+      <table class="login-container">
+        <tr>
+          <td>
+            <div class="login-boxes">
+              <form (ngSubmit)="login()">
+                <h2 style="text-align: center">Login</h2>
+                <table>
+                  <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        id="username"
+                        [(ngModel)]="username"
+                        name="username"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>
+                      <input
+                        type="password"
+                        id="password"
+                        [(ngModel)]="password"
+                        name="password"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>
+                      <input
+                        type="email"
+                        id="email"
+                        [(ngModel)]="email"
+                        name="email"
+                        required
+                      />
+                    </td>
+                  </tr>
+                </table><br>
+                <button type="submit">Login</button>or
+                <button type="submit">Sign up</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
