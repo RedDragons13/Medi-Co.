@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LocationComponent } from './location/location.component';
 import { SignupComponent } from './signup/signup.component';
+import { TimeComponent } from './time/time.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SignupComponent } from './signup/signup.component';
     // Your other components
     LoginComponent,
     LocationComponent,
-    SignupComponent
+    SignupComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,
@@ -25,3 +27,4 @@ import { SignupComponent } from './signup/signup.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
